@@ -1,0 +1,19 @@
+Git Hub Path
+https://github.com/Gandayiki/Employee-
+
+>>Employe Management CRUD operation using MERN full stack Technoology 
+
+>>Back end I have used Nodemon to update a files authomatically 
+>>to start Up back end Server us
+   >>npm run dev
+
+>>For API tes 
+  >>(Get) http://localhost:2021/employees/ (get or retrieve  data)
+  >>(Post) http://localhost:2021/employees/add (add to dataBase)
+  >>(put)  http://localhost:2021/employees/update/id(update db)
+  >>(delete) http://localhost:2021/employees/delete/id(delete by ID)
+
+
+
+
+ 

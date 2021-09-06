@@ -1,0 +1,26 @@
+{
+  "name": "employee",
+  "version": "1.0.0",
+  "description": "test project that manages employee using mern full stack ",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gandayiki/Employee-.git"
+  },
+  "author": "SoulaxG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gandayiki/Employee-/issues"
+  },
+  "homepage": "https://github.com/Gandayiki/Employee-#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4",
+    "nodemon": "^2.0.12"
+  }
+}
