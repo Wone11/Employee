@@ -2,12 +2,21 @@ const express = require('express');
 const mongoose  = require('mongoose');
 const bodyParser = require('body-parser');
 const employeeRoute = require('./Routes/Employee');
+const cors = require('cors');
+const { application } = require('express');
 
 mongoose.connect("mongodb://localhost:27017/EmployeeManagement",{
 useNewUrlParser:true,
 });
 
+
+
+
 const app = express();
+
+//Allow Access from Front 
+
+app.use(cors({origin: 'http://localhost:3000'}));
 app.use(bodyParser.json());
 app.use('/employees',employeeRoute);
 

@@ -1,19 +1,29 @@
 Git Hub Path
 https://github.com/Gandayiki/Employee-
 
+>> Database Name :EmployeeManagement
+>>Collection :  employees
+
 >>Employe Management CRUD operation using MERN full stack Technoology 
 
 >>Back end I have used Nodemon to update a files authomatically 
 >>to start Up back end Server us
-   >>npm run dev
+>>change a folder directory to Backend 
+  --cd backend
+   >>npm start
 
->>For API tes 
+>> for Front end 
+ ==cd Front
+ >>npm start
+
+>>For API test on Postman
+
   >>(Get) http://localhost:2021/employees/ (get or retrieve  data)
   >>(Post) http://localhost:2021/employees/add (add to dataBase)
   >>(put)  http://localhost:2021/employees/update/id(update db)
   >>(delete) http://localhost:2021/employees/delete/id(delete by ID)
 
-
-
-
  
+fron end Nav Bar designed by Styled components 
+
+and I have used bootstrap for the CRUD Operations page landing

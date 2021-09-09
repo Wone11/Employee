@@ -8,7 +8,7 @@ const employees = new schema({
         default:"Babuja"
     },
     dateOfBirth:{
-        type:Date,
+        type:String,
         default:null
     },
     gender:{

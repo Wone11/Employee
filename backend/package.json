@@ -4,8 +4,11 @@
   "description": "test project that manages employee using mern full stack ",
   "main": "index.js",
   "scripts": {
-    "start": "index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.js",
+    "server":"nodemon index.js",
+    "client":"npm run start --prefix front",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,9 @@
   "homepage": "https://github.com/Gandayiki/Employee-#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "concurrently": "^6.2.1",
+    "cores": "^0.8.5",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^6.0.4",
     "nodemon": "^2.0.12"

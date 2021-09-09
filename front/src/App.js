@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-useless-constructor */
+import React from 'react'
+import HomePage from './Components/Homepage';
+import EditEmployee from './Components/EditEmployee';
+import Details from './Components/Details';
+import CreateEmployee from './Components/CreateEmployee';
+import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render(){
+    return(
+      <Router>
+        <Switch>
+        <Route path ="/" exact component = {HomePage} />
+        <Route path ="/details/:id" component ={Details} />
+        <Route path ="/delete/:id" component ={HomePage} />
+        <Route path ="/add" component ={CreateEmployee} />
+        <Route path ="/edit/:id" component ={EditEmployee} />
+        </Switch>
+      </Router>
+    )
+  }
 }
-
-export default App;
+export default App
